@@ -23,8 +23,8 @@ Q6. What command can we use to display all printable strings of length ≥ 8 in 
 A6. If we want to display all printable strings of length ≥ 8 in the file /bin/bash, we will use " strings -n 8 /bin/bash "
 Q7. Given the following output of the file command, can you determine what’s wrong with this file?
 A7. This file is neither an image nor a text file.
-         The file output clearly shows it is an ELF 64-bit executable, which means it’s a binary program for Linux.
-          So even though it’s named image.jpg, that extension is misleading the file is actually a compiled executable, not readable text, and not a real image.
+The file output clearly shows it is an ELF 64-bit executable, which means it’s a binary program for Linux.
+So even though it’s named image.jpg, that extension is misleading the file is actually a compiled executable, not readable text,             and not a real image.
 Q8. If we want to look for files modified in the last 30 minutes in the/home directory, what command would we use?
 A8. If we want to look for files modified in the last 30 minutes  in the /home directory, we would use find /home -type f -mmin -30.
 Q9. What command can we use to display information about all active TCP connections on the system?
