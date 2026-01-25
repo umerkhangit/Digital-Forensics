@@ -1,4 +1,4 @@
-#LAB 01 Q&A
+# LAB 01 Q&A
 Q1. If we want to list all the .txt files in the current directory, what command would we use?
 
 A1. If we wanted to list all the .txt files in the current directory, we would use " ls *.txt "
