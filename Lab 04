@@ -1,1 +1,24 @@
-# Question & Answers
+# QUESTION & ANSWERS
+
+Q1.What IP address does the attack seem to be originating from?
+A1.From 192.168.0.106
+Q2.Which vulnerabilities do you think are being exploited, and what evidence do you have to support your findings?
+A2.The attacker can access all the that he input there are no restriction to view this file, we have some original evidence that the user try to access confidential files and succeed to to access the respose shown that it's 200 which means the request was received, understood, and successfully fulfilled.
+Q3.How can we determine what web browser the attacker is using?
+A3.By seeing logs, the web browser of the attacker is Firefox
+Q4.Did the attacker use any automated tools during the attack? If so, can you identify the name of the tool and its purpose?
+A4.Yes the attacker uses SQL MAP Tool, the purpose of SQL MAP is Automatically detect SQL injection,Exploit vulnerable parameters,Extract database information
+Q5.Which file was the attacker trying to access but couldn't due to limited server access?
+A5.The attacker try to access etc/passwd file
+Q6.Did the attacker gain access to any confidential data? If yes, how much data was compromised?
+A6.Yes, the attacker gained access to confidential data. Log evidence shows successful requests for sensitive system files such as /etc/passwd, which contains user account information, as well as internal application files like important_note.txt. While there is no evidence of large-scale data exfiltration, the attacker accessed multiple sensitive files, indicating a limited but significant data compromise.
+Q7.An important secret was compromised. Can you figure it out? Hint: The secret you're looking for is not in a .sql or a .php file.
+A7.Yes an important secret was compromised, It's the ../../../../etc/shadow file that contains 
+* Password hashes for all system users
+* Account aging and lock information
+Q8.The attacker left a message for the server administrator. Find out what the message said, and also mention how you were able to find it.
+A8.The message said cat: /etc/shadow: Permission denied, I was able to find that from apache2/error.log
+Q9.What were some indicators that confirmed that an attack had taken place? What were your key takeaways from this attack?
+A9.Obviosly the user takes input of cat: /etc/shadow: Permission denied this isn't normal the file the user succeed to view is malicious
+Q10.Based on this attack, what indicators of compromise can be used to detect future attacks?
+A10.
